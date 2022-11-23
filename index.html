@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>forms</title>
+    </head>
+    <body>
+        <header>
+            <h1>work with form</h1>
+        </header>
+        <main>
+            <form action="">
+                <fieldset>
+                    <legend>форма обратной связи</legend>
+                    <div>
+                        <div>
+                            <label for="fname">First name</label>
+                            <input type="text" id="fname" name="fname" placeholder="type your name">
+                        </div>
+                        <label for="lname">Last name</label>
+                        <input type="text" id="lname" placeholder="type your last name">
+                    </div>
+                    <div>
+                        <label for="mail">email</label>
+                        <input type="email" name="mail" id="mail" placeholder="***@***">
+                        <label for="phone">phone</label>
+                        <input type="tel" name="phone" id="phone" placeholder="+380...">
+                        <label for="conact">Prefer contact with you</label>
+                        <input list="contacts" name="contact" id="contact" placeholder="pigeon mail">
+                        <datalist id="contacts">
+                            <option value="mail">
+                            <option value="phone">
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="password">don't ask why we need your password
+                            <input type="password" name="" id="" placeholder="qwerty">
+                     
+                        </label>
+                    </div>
+                    <div>
+                        <label for="radio">You want:</label>
+                        <p><input type="radio" name="praise" required>praise us</p>
+                        <p><input type="radio" name="complain" disabled>complain about us</p>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>your beutiful message</legend>
+                            <textarea name="" id="" cols="190" rows="10"></textarea>
+                            <legend><input type="checkbox" name="" id=""> I am definitely not drunk</legend>
+                            <legend><input type="checkbox" name="" id="">Not exactly</legend> 
+                            <legend>if you don't feel like writing anything, just upload a song that describes your emotions<input type="file" name="" id=""></legend>    
+                            <legend>or you can choose
+                                <select name="" id="" label="">
+                                    <optgroup label="We are">
+                                        <option value="">The best</option>
+                                        <option value="">The champions</option>
+                                    </optgroup>
+                                    <optgroup label="I wish you a">
+                                        <option value="">Merry Christmas</option>
+                                        <option value="">nice weekend</option>
+                                    </optgroup>
+                                </select>
+                            </legend>
+                        </fieldset>
+                    </div>
+                </fieldset>
+                <legend><input type="checkbox" name="" id="" required>you agree that we can use your data</legend>
+                <button type="reset">clear</button>
+                <button type="submit">send</button>
+            </form>
+        </main>
+    </body>
+</html>
